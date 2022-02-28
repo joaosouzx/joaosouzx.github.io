@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Marcos</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/c13298ad5b.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">João Marcos</label>
+            <ul>
+              <li><a class="active" href="#intro">Início</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#experience">Experiência</a></li>
+              <li><a href="#education">Educação</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </nav>
+    </header>
+
+
+
+
+
+    <main class="container"> <!-- Container -->
+
+        <section id="intro"> <!-- Intro -->
+            <h6>Olá, meu nome é</h6>
+            <h1>João Marcos.</h1>
+            <div class="wrapper">
+                <!-- Wrapper -->
+                <div class="static-txt">Sou um</div>
+                <ul class="dynamic-txts">
+                    <li><span>Front-End Developer.</span></li>
+                    <li><span>Web Designer.</span></li>
+                    <li><span>Freelancer.</span></li>
+                </ul>
+            </div> <!-- /Wrapper -->
+            <a href="#about">Saiba Mais</a>
+        </section> <!-- /Intro -->
+
+        <section id="about"> <!-- about -->
+            <div class="about-left">
+                <h2 class="title">Sobre mim</h2>
+                <p>
+                    Olá! Meu nome é João Marcos e eu amo criar coisas para a internet.
+                    Meu interesse em desenvolvimento Web começou em 2021 quando comecei
+                    a editar algumas páginas HTML.
+                </p>
+                <p>
+                    Hoje eu trabalho na <a href="https://www.instagram.com/performaagencia/">Performance</a> criando
+                    sites e páginas para os nossos clientes.
+                </p>
+                <p>Aqui estão algumas tecnologias com as quais tenho trabalho recentemente:</p>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+
+            <div class="about-right">
+                <div class="img-overlay"></div>
+                <div class="img">
+                    <img src="images/joaomarcos.jpg" alt="João Marcos" title="João Marcos">
+                </div>
+            </div>
+        </section> <!-- /about -->
+
+        <section id="experience">
+            <h2 class="title">Experiência</h2>
+            <h3>Desenvolvedor Full-Stack</h3>
+            <h5><span>Jan 2020 - Atual</span> | Performance Agência</h5>
+            <p>Desenvolvo e atualizo páginas web para os sites que a empresa administra</p>
+
+            <br>
+
+            <h3>Web Designer</h3>
+            <h5><span>Jan 2020 - Atual</span> | Performance Agência</h5>
+            <p>Construo o design de páginas web para os sites gerenciados pela empresa</p>
+        </section>
+
+        <section id="education">
+            <h2 class="title">Educação</h2>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <h5><span>2020 - 2022</span> | FADERGS</h5>
+            <p>Curso de Análise e Desenvolvimento de Sistemas que me proporcionou conhecimentos e experiências na área de TI</p>
+        </section>
+
+        <section id="contact">
+            <h1>Entrar em contato</h1>
+            <p>
+                Minha caixa de entrada está sempre aberta. Se você tem uma pergunta ou apenas quer dizer oi,
+                vou tentar o meu melhor para responder você!
+            </p>
+            <br><br>
+            <a href="mailto:joaomarcos.webdev@gmail.com" style="display: block; margin: auto;">Diga Olá</a>
+        </section>
+
+        <footer>
+            <a href="https://github.com/joaosouzx"><i class="fa-brands fa-github"></i></a>
+
+            <a href="https://www.instagram.com/joao.souzx/"><i class="fa-brands fa-instagram"></i></a>
+
+            <br>
+            <a href="https://www.instagram.com/joao.souzx/"><p>Feito com ❤ por João Marcos</p></a>
+        </footer>
+    </main> <!-- /Container -->
+
+
+
+
+
+
+
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    <!-- /loader -->
+</body>
+
+</html>
