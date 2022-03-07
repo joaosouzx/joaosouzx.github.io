@@ -308,20 +308,31 @@ header #check{
 /* About
 ********************************************/
 
-#about {
+#about, #portfolio {
     display: grid;
     grid-template-columns: minmax(200px, 3fr) 2fr;
     gap: 30px;
 }
 
-.about-right {
+#portfolio h3 {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.about-right, .portfolio-right {
     max-width: 300px;
     display: block;
     margin-top: 20px;
     position: relative;
 }
 
-.img-overlay {
+
+.portfolio-right {
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+.img-overlay{
     position: absolute;
     left: 0;
     width: 100%;
@@ -338,20 +349,40 @@ header #check{
     background: none;
 }
 
-.about-right .img img{
+.about-right .img img, .portfolio-right .img img{
     max-width: 300px;
     border-radius: 5px;
     
 }
 
+.portfolio-right .img img{
+    max-width: 500px;
+    
+}
+
 @media screen and (max-width: 768px) {
-    #about {
+    #about, #portfolio {
         display: block;
     }
 
-    .about-right {
+    .about-right, .portfolio-right {
         margin: 30px auto;
     }
+
+    .portfolio-right {
+        max-width: 300px;
+    }
+
+    .portfolio-right .img img{
+        max-width: 300px;
+        
+    }
+
+    #portfolio h3 {
+        padding-top: 0;
+        text-align: center;
+    }
+    
 }
 
 #about span{
