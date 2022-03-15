@@ -111,6 +111,7 @@ header #check{
     header nav ul li a{
         font-size: 16px;
     }
+
 }
 
 @media (max-width: 858px){
@@ -332,11 +333,15 @@ header #check{
     max-width: 500px;
 }
 
+.about-right .img-overlay{
+    height: 98%;
+}
+
 .img-overlay{
     position: absolute;
     left: 0;
     width: 100%;
-    height: 98%;
+    height: 99%;
     border-radius: 5px;
     background: var(--main);
     opacity: .55;
@@ -348,6 +353,51 @@ header #check{
 .img-overlay:hover {
     background: none;
 }
+
+@media screen and (max-width: 768px) {
+    .about-right .img-overlay{
+        height: 99% !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .about-right .img-overlay{
+        height: 75% !important;
+    }
+}
+
+@media screen and (min-width: 822px) {
+    .about-right .img-overlay{
+        height: 80% !important;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .about-right .img-overlay{
+        height: 85% !important;
+    }
+}
+
+@media screen and (min-width: 1063px) {
+    .about-right .img-overlay{
+        height: 91% !important;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .about-right .img-overlay{
+        height: 91% !important;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .about-right .img-overlay{
+        height: 98% !important;
+    }
+}
+
+
+
 
 .about-right .img img, .portfolio-right .img img{
     max-width: 300px;
